@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>UniversidadWebApp</display-name>
+ 
+  <welcome-file-list>
+    <!-- welcome-file>index.html</welcome-file -->
+    <welcome-file>index.jsp</welcome-file>
+    
+  </welcome-file-list>
+  
+  
+  <servlet>
+  	<servlet-name>TestPoolConnectionServlet</servlet-name>
+  	<servlet-class>mx.edu.uacm.web.programming.servlet.TestPoolConnectionServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>InscAlumnoServlet</servlet-name>
+  	<servlet-class>mx.edu.uacm.web.programming.servlet.InscAlumnoServlet</servlet-class>
+  </servlet>
+  
+  
+  <!-- servlet>
+  	<servlet-name>MateriasAlumno</servlet-name>
+  	<servlet-class>mx.edu.uacm.web.programming.servlet.MateriasAlumnoServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>MateriasAlumno</servlet-name>
+  	<url-pattern>/alumno/materiasAlumno</url-pattern>
+  </servlet-mapping -->
+  
+  
+  <servlet-mapping>
+  	<servlet-name>InscAlumnoServlet</servlet-name>
+  	<url-pattern>/alumno/inscAlumnoServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>TestPoolConnectionServlet</servlet-name>
+  	<url-pattern>/TestPoolConnectionServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+</web-app>
